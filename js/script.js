@@ -122,3 +122,18 @@
   });
 
 })(jQuery);
+
+$('a[href^="#"]').on('click', function(e) {
+  // デフォルトのaタグの挙動を無視する
+  e.preventDefault();
+  // アンカーの値取得
+  var targetAnchor= $(this).attr('href');
+  // 移動先を取得
+  var targetContent = $(targetAnchor == "#" || targetAnchor == "" ? 'html' : targetAnchor);
+  // 移動先を数値で取得
+  var targetPosition = targetContent.offset().top - 120;
+  // スムーススクロール
+  $('html,body').animate({
+    scrollTop: targetPosition
+  }, 300);
+});
