@@ -398,6 +398,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link {
   color: #091337;
+  border-radius: 5px;
 }
 
 .navigation {
@@ -431,6 +432,10 @@ a:hover {
   .nav-item {
     padding: 0;
   }
+}
+
+.nav-link:hover {
+  background-color: lightcyan; /* ボタンの背景色を薄い灰色に設定 */
 }
 
 .hero-section {
@@ -1362,5 +1367,14 @@ textarea.form-control {
 }
 
 .underline-link {
+  position: relative;
+}
+
+.underline-link::after {
+  content: "";
+  position: absolute;
+  left: 1px; /* 左端から1pxオフセット */
+  right: 1px; /* 右端から1pxオフセット */
+  bottom: 0;
   border-bottom: 2px solid blue; /* 下線の太さと色を指定 */
 }
