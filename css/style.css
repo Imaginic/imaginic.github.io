@@ -1360,3 +1360,7 @@ textarea.form-control {
 .img-fluid{
   max-width: 300px !important;
 }
+
+.underline-link {
+  border-bottom: 2px solid blue; /* 下線の太さと色を指定 */
+}
