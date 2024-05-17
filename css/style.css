@@ -398,6 +398,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link {
   color: #091337;
+  border-radius: 5px;
 }
 
 .navigation {
@@ -431,6 +432,10 @@ a:hover {
   .nav-item {
     padding: 0;
   }
+}
+
+.nav-link:hover {
+  background-color: lightcyan; /* ボタンの背景色を薄い灰色に設定 */
 }
 
 .hero-section {
@@ -1359,4 +1364,40 @@ textarea.form-control {
 
 .img-fluid{
   max-width: 300px !important;
+}
+
+.underline-link {
+  position: relative;
+}
+
+.underline-link::after {
+  content: "";
+  position: absolute;
+  left: 1px; /* 左端から1pxオフセット */
+  right: 1px; /* 右端から1pxオフセット */
+  bottom: 0;
+  border-bottom: 2px solid blue; /* 下線の太さと色を指定 */
+}
+
+.workers-icons {
+  width: 80px; /* アイコンの幅を50pxに設定 */
+  height: auto; /* 高さは自動的に調整 */
+}
+
+.notfound-icon {
+  width: 300px;
+  height: auto;
+  margin-top: 150px;
+  margin-bottom: -180px;
+}
+
+.igc-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.large-icon {
+  font-size: 2em;
 }
