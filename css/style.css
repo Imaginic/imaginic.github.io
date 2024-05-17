@@ -1383,3 +1383,10 @@ textarea.form-control {
   width: 80px; /* アイコンの幅を50pxに設定 */
   height: auto; /* 高さは自動的に調整 */
 }
+
+.notfound-icon {
+  width: 300px;
+  height: auto;
+  margin-top: 150px;
+  margin-bottom: -180px;
+}
