@@ -1397,3 +1397,7 @@ textarea.form-control {
   margin-right: auto;
   width: 100%;
 }
+
+.large-icon {
+  font-size: 2em;
+}
