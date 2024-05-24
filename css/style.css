@@ -1391,6 +1391,13 @@ textarea.form-control {
   margin-bottom: -180px;
 }
 
+.motim-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .igc-icon {
   display: block;
   margin-left: auto;
@@ -1400,4 +1407,19 @@ textarea.form-control {
 
 .large-icon {
   font-size: 2em;
+}
+
+.table-bordered {
+  border: 2px solid #ddd;
+  padding: 20px; 
+}
+.table-bordered th,
+.table-bordered td {
+  border: 2px solid #ddd;
+  padding: 20px;
+}
+
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
 }
